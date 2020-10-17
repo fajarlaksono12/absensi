@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                           <b href="?page=agama&act=tambah" class="btn btn-primary mb-3"style="width:10%;margin-bottom:10px">Tambah</b>
+                           <a href="?page=agama&act=tambah" class="btn btn-primary mb-3"style="width:10%;margin-bottom:10px">Tambah</a>
                             <div class="table-responsive">
                                 <table id="myTable" class="table table-striped">
                                     <thead>
@@ -42,7 +42,7 @@
                                             <td style="text-align:left;"><?php echo $no;?></td>
 
                                             <td style="text-align:left;"><?php echo $r['agama'];?></td>
-                                            <td style="text-align:left;"><b href="?page=agama&act=ubah&id=<?php echo $r['id_agama'];?>">Ubah</b> | <b href="?page=agama&act=hapus&id=<?php echo $r['id_agama'];?>">Hapus</b></td>
+                                            <td style="text-align:left;"><a href="?page=agama&act=ubah&id=<?php echo $r['id_agama'];?>">Ubah</a> | <a href="?page=agama&act=hapus&id=<?php echo $r['id_agama'];?>">Hapus</a></td>
                                         </tr>
                                         <?php
                                         $no++;

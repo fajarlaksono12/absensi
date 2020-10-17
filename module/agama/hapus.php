@@ -1,6 +1,6 @@
 <?php
  include "koneksi.php";
- $id=$_POST['id_agama'];
+ $id=$_POST['id'];
  $query=mysqli_query($koneksi,"Delete FROM tb_agama WHERE id_agama='$id'");
  
  

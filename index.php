@@ -274,13 +274,13 @@ if (!empty($_SESSION['id_user'])) {
                     <li class="dropdown">
                         <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img
                                 src="./plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b
-                                class="hidden-xs">Steave</b><span class="caret"></span> </a>
+                                class="hidden-xs">FAJAR</b><span class="caret"></span> </a>
                         <ul class="dropdown-menu dropdown-user animated flipInY">
                             <li>
                                 <div class="dw-user-box">
                                     <div class="u-img"><img src="./plugins/images/users/varun.jpg" alt="user" /></div>
                                     <div class="u-text">
-                                        <h4>Steave Jobs</h4>
+                                        <h4>FAJAR AJA</h4>
                                         <p class="text-muted">varun@gmail.com</p><a href="profile.html"
                                             class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                     </div>

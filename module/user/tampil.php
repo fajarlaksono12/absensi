@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="white-box">
-                           <b href="?page=agama&act=tambah" class="btn btn-primary mb-3"style="width:10%;margin-bottom:10px">Tambah</b>
+                           <a href="?page=user&act=tambah" class="btn btn-primary mb-3"style="width:10%;margin-bottom:10px">Tambah</a>
                             <div class="table-responsive">
                                 <table id="myTable" class="table table-striped">
                                     <thead>
@@ -30,13 +30,14 @@
                                             <th>ID_User</th>
                                             <th>Username</th>
                                             <th>Password</th>
+                                            <th>Level</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                          <?php
                                         include "./inc/koneksi.php";
-                                        $tampil = mysqli_query($koneksi, "SELECT * FROM tb_user AS e");
+                                        $tampil = mysqli_query($koneksi, "SELECT * FROM tb_user AS a");
                                             $no=1;
                                             while($r=mysqli_fetch_array($tampil)){
                                             ?>
@@ -45,7 +46,8 @@
                                             <td style="text-align:left;"><?php echo $r['id_user'];?></td>
                                             <td style="text-align:left;"><?php echo $r['username'];?></td>
                                             <td style="text-align:left;"><?php echo $r['password'];?></td>
-                                            <td style="text-align:left;"><e href="?page=user&act=ubah&id=<?php echo $r['id_user'];?>">Ubah</e> | <e href="?page=user&act=hapus&id=<?php echo $r['id_user'];?>">Hapus</e></td>
+                                            <td style="text-align:left;"><?php echo $r['level'];?></td>
+                                            <td style="text-align:left;"><a href="?page=user&act=ubah&id=<?php echo $r['id_user'];?>">Ubah</a> | <a href="?page=user&act=hapus&id=<?php echo $r['id_user'];?>">Hapus</a></td>
                                         </tr>
                                         <?php
                                         $no++;

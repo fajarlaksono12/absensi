@@ -28,19 +28,19 @@ $r=mysqli_fetch_array($tampil);
                         <div class="white-box">
                             
                             <form method="post" class="form-horizontal" >
-                             <input type=hidden name="ID" value="<?php echo $r['id_agama'];?>">
+                             <input type=hidden name="id" value="<?php echo $r['id_agama'];?>">
                             
                                 <div class="form-group">
                                     <label class="col-md-12">Agama </label>
                                     <div class="col-md-12">
-                                        <input type="text" name = "Agama" class="form-control"  value="<?php echo $r['agama'];?>"> </div>
+                                        <input type="text" name = "agama" class="form-control"  value="<?php echo $r['agama'];?>"> </div>
                                 </div>
                                  <tr><td></td><td></td><td><input type="submit" name="submit" value="simpan"></td></tr> 
                             </form>
                             <?php
                             print_r(@$_POST['submit']);
                             if(@$_POST['submit']){
-                            $id = $_POST['id_agama'];
+                            $id = $_POST['id'];
                             $agama = $_POST['agama'];
                             
                             
